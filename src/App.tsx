@@ -2,8 +2,8 @@ import React, {MouseEvent, ReactElement} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectMetalsStatePlatinum, selectMetalStateGold, selectMetalStateSilverNonMemo, selectMetalStateCopperNonMemo } from './reducers';
-import { SetPlatinumAction, setPlatinum } from './actions/metals';
+import { selectMetalsStatePlatinum, selectMetalStateGold, selectMetalStateSilverNonMemo, selectMetalStateCopperNonMemo } from './features/platinum/reducers';
+import { SetPlatinumAction, setPlatinum } from './features/platinum/actions/metals';
 
 function App() {
   const dispatch = useDispatch()
